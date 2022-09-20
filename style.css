@@ -1,0 +1,94 @@
+/* For Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body {
+  background: white;
+  color: white;
+}
+
+.container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.cover__video {
+  position: fixed;
+    top: 0;
+    width: 100vw;
+    height: var(--full-height,100vh);
+    mix-blend-mode: multiply;
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+  height: 10000px;
+}
+
+.animate {
+  position: sticky;
+  top: 45vh;
+  opacity: 0;
+  font-size: 40px;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+}
+
+.animate_first {
+  top: 25vh;
+}
+
+.animate_second {
+  top: 35vh;
+}
+
+.trigger {
+  width: 100%;
+  height: 10px;
+  margin-bottom: 1500px;
+}
+
+.left_show1 {
+  opacity: 0;
+  left: 0px;
+  position: absolute;
+}
+
+.left_show2 {
+  opacity: 0;
+  left: 0px;
+  bottom: -300px;
+  position: absolute;
+}
+
+.right_show1 {
+  opacity: 0;
+  right: 0px;
+  bottom: -200px;
+  position: absolute;
+}
+
+.under_show1 {
+  opacity: 0;
+  bottom: -220px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}

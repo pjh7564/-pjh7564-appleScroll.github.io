@@ -8,10 +8,12 @@ $(function(){
 
   var animateElem2 = [".animate_2"];
   var under_show1 = [".under_show1"];
-  
   var triggerElem2 = [".trigger_2"];
   
   var animateElem3 = [".animate_3"];
+  var fade_show1 = [".fade_show1"];
+  var fade_show2 = [".fade_show2"];
+  var fade_show3 = [".fade_show3"];
   var triggerElem3 = [".trigger_3"];
 
   var animateElem4 = [".animate_4"];
@@ -140,26 +142,52 @@ $(function(){
     var timeline = new TimelineMax();
 
     var tween_move = TweenMax.fromTo(currentAnimateElem, 1, {
-        ease: SlowMo.ease.config(0.1, 0.7, false),
-        x: 200,
+        ease: SlowMo.ease.config(0.7, 0.7, false),
+        y : 0
       },
       {
-        ease: SlowMo.ease.config(0.1, 0.7, false),
-        x: -100,
+        ease: SlowMo.ease.config(0.7, 0.7, false),
+        y : 0
       }
     );
 
     var tween_opacity = new TimelineMax();
     tween_opacity
-      .to(currentAnimateElem, 1, {
-        ease: Sine.easeIn,
-        opacity: 1,
-        scale : 2
-      })
-      .to(currentAnimateElem, 2, {
-        ease: Sine.easeIn,
+      .to(currentAnimateElem, 3, {
+        ease: Circ.easeOut,
         opacity: 0,
-        scale : 1
+      })
+      .to(fade_show1, 1, {
+        ease: SlowMo.ease.config(0.7, 0.7, false),
+        opacity: 0,
+      })
+      .to(fade_show2, 1, {
+        ease: SlowMo.ease.config(0.7, 0.7, false),
+        opacity: 0,
+      })
+      .to(fade_show3, 1, {
+        ease: SlowMo.ease.config(0.7, 0.7, false),
+        opacity: 0,
+      })
+      .to(currentAnimateElem, 6, {
+        ease: Circ.easeOut,
+        opacity: 1,
+      })
+      .to(fade_show1, 4, {
+        ease: SlowMo.ease.config(0.7, 0.7, false),
+        opacity: 1,
+      })
+      .to(fade_show2, 4, {
+        ease: SlowMo.ease.config(0.7, 0.7, false),
+        opacity: 1,
+      })
+      .to(fade_show3, 4, {
+        ease: SlowMo.ease.config(0.7, 0.7, false),
+        opacity: 1,
+      })
+      .to(currentAnimateElem, 3, {
+        ease: Circ.easeOut,
+        opacity: 0,
       });
 
     timeline.add(tween_move, 0).add(tween_opacity, 0);

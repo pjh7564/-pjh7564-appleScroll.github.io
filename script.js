@@ -56,17 +56,17 @@ $(function(){
     .to(left_show1, 3.5, {
       ease: SlowMo.ease.config(1, 1, false),
       opacity: 1,
-      x: 1200
+      x: 500
     })
     .to(right_show1, 3.5, {
       ease: SlowMo.ease.config(1, 1, false),
       opacity: 1,
-      x: -1200
+      x: -500
     })
     .to(left_show2, 3.5, {
       ease: SlowMo.ease.config(1, 1, false),
       opacity: 1,
-      x: 1200
+      x: 500
     })
     .to(currentAnimateElem, 1, {
       ease: SlowMo.ease.config(0.7, 1, false),

@@ -169,9 +169,8 @@ $(function(){
 
 /* =================================================================== */
   // 네번째 페이지 효과
-  for (var i = 0; i < animateElem4.length; i++) {
-    var currentAnimateElem = animateElem4[i];
-    var currentTriggerElem = triggerElem4[i];
+    var currentAnimateElem = animateElem4;
+    var currentTriggerElem = triggerElem4;
 
     var timeline = new TimelineMax();
 
@@ -206,6 +205,6 @@ $(function(){
     })
       .setTween(timeline)
       .addTo(controller);
-  }
+  
 /* =================================================================== */
 });

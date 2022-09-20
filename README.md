@@ -10,7 +10,6 @@ scroll effect<br>
 <br>
 <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=firebase&logoColor=white"/>
 <img src="https://img.shields.io/badge/XAMPP-FB7A24?style=flat-square&logo=firebase&logoColor=white"/>
-<img src="https://img.shields.io/badge/XAMPP-FB7A24?style=flat-square&logo=firebase&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=firebase&logoColor=white"/>
 
 참고한 페이지<br>
